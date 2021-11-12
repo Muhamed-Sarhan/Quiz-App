@@ -12,7 +12,7 @@ const Login = lazy(() => {
 const Routes = () => {
 	return (
 		<Switch>
-			<Suspense fallback={<span class='loader'></span>}>
+			<Suspense fallback={<span className='loader'></span>}>
 				<Route path='/' exact component={Login} />
 				<Route path='/q' component={Question} />
 			</Suspense>

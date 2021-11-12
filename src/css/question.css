@@ -15,47 +15,48 @@
 .score {
 	width: 650px;
 	height: 320px;
-	background-color: black;
+	background: linear-gradient(to right, #d25778, #ec585c, #e7d155, #56a8c6);
 	border-radius: 25px;
-	position: relative;
 	color: #fff;
 	font-size: 3rem;
 	font-weight: 600;
 	text-align: center;
-	border: 11px solid teal;
+	box-shadow: rgb(37, 35, 35) 10px 20px 20px -10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.score-container {
+	width: 98%;
+	height: 97%;
+	border-radius: 25px;
+	z-index: 100;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 .score h3 {
-	margin-top: 85px;
+	text-transform: uppercase;
 }
 .score span {
-	font-size: 3.5rem;
+	font-size: 4rem;
 	color: teal;
 }
+.again-btn {
+	margin-top: 50px;
+	outline: none;
+	border: none;
+	padding: 1rem 3rem;
+	background-color: teal;
+	font-weight: 700;
+	color: #fff;
+	font-size: 1rem;
+	border-radius: 25px;
+	cursor: pointer;
+}
 
-.score:before {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 130px;
-	left: -30px;
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	background: black;
-	z-index: 2;
-}
-.score:after {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 130px;
-	right: -30px;
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	background: black;
-	z-index: 2;
-}
 .userName {
 	position: absolute;
 	display: flex;
@@ -108,7 +109,7 @@
 	color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 	.q-container {
 		max-width: 80vw;
 	}
@@ -141,16 +142,11 @@
 		height: 40vh;
 		font-size: 1.5rem;
 	}
-	.score h3 {
-		margin-top: 65px;
-	}
+
 	.score span {
 		font-size: 2rem;
 	}
-	.score:before {
-		display: none;
-	}
-	.score:after {
-		display: none;
+	.again-btn {
+		padding: 0.5rem 1.5rem;
 	}
 }
