@@ -1,0 +1,156 @@
+.question {
+	width: 100vw;
+	height: 100vh;
+	background: url('https://i.ibb.co/f1tr0bY/joanna-kosinska-1-CMo-Fs-Pfso-unsplash.jpg')
+		center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: auto;
+}
+.q-container {
+	max-width: 40vw;
+}
+.score {
+	width: 650px;
+	height: 320px;
+	background-color: black;
+	border-radius: 25px;
+	position: relative;
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 600;
+	text-align: center;
+	border: 11px solid teal;
+}
+.score h3 {
+	margin-top: 85px;
+}
+.score span {
+	font-size: 3.5rem;
+	color: teal;
+}
+
+.score:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 130px;
+	left: -30px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: black;
+	z-index: 2;
+}
+.score:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 130px;
+	right: -30px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: black;
+	z-index: 2;
+}
+.userName {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 20px;
+	right: 20px;
+}
+.userName p {
+	margin-right: 20px;
+	font-size: 1.5rem;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.userName img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+.question-count {
+	margin-top: 25px;
+	font-size: 2rem;
+	font-weight: 600;
+}
+.question-count span {
+	font-size: 3rem;
+}
+.question-text {
+	margin-top: 3rem;
+	font-size: 2rem;
+	font-weight: 500;
+}
+.answer-section {
+	display: flex;
+	flex-direction: column;
+	margin-top: 3rem;
+}
+.answer-btn {
+	margin-top: 20px;
+	padding: 15px 25px;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 600;
+	border: none;
+	border-radius: 25px;
+	transition: all 0.3s ease-out;
+}
+.answer-btn:hover {
+	background-color: teal;
+	color: white;
+}
+
+@media only screen and (max-width: 600px) {
+	.q-container {
+		max-width: 80vw;
+	}
+	.userName p {
+		font-size: 1rem;
+	}
+	.userName img {
+		width: 40px;
+		height: 40px;
+	}
+	.question-count {
+		font-size: 1rem;
+		margin-top: 35px;
+	}
+	.question-count span {
+		font-size: 2rem;
+	}
+	.question-text {
+		margin-top: 2rem;
+		font-size: 1rem;
+		font-weight: 700;
+		text-align: center;
+	}
+	.answer-btn {
+		padding: 10px 20px;
+		font-size: 0.75rem;
+	}
+	.score {
+		width: 90vw;
+		height: 40vh;
+		font-size: 1.5rem;
+	}
+	.score h3 {
+		margin-top: 65px;
+	}
+	.score span {
+		font-size: 2rem;
+	}
+	.score:before {
+		display: none;
+	}
+	.score:after {
+		display: none;
+	}
+}
