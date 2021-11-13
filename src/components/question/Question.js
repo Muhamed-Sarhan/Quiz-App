@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
@@ -11,6 +11,7 @@ const Question = () => {
 	const [currentQ, setCurrentQ] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
+	const [random, setRandom] = useState([]);
 	const userName = useSelector((state) => state.reducer.name);
 
 	const handleAgain = () => {
@@ -28,6 +29,13 @@ const Question = () => {
 			setShowScore(true);
 		}
 	};
+
+	useEffect(() => {
+		const randomQuestion = questions.sort(() => Math.random() - 0.5);
+		setRandom(randomQuestion);
+		console.log(random, '-O__O-');
+	}, []);
+
 	return (
 		<div className='question'>
 			{showScore ? (
@@ -58,14 +66,16 @@ const Question = () => {
 						<div className='question-text'>{questions[currentQ].question}</div>
 					</div>
 					<div className='answer-section'>
-						{questions[currentQ].answers.map((ans, i) => (
-							<button
-								onClick={() => handleNextQ(ans.isTrue)}
-								key={i}
-								className='answer-btn'>
-								{ans.choice}
-							</button>
-						))}
+						{questions[currentQ].answers
+							.sort(() => Math.random() - 0.5)
+							.map((ans, i) => (
+								<button
+									onClick={() => handleNextQ(ans.isTrue)}
+									key={i}
+									className='answer-btn'>
+									{ans.choice}
+								</button>
+							))}
 					</div>
 				</div>
 			)}
