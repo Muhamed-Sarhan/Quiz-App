@@ -291,7 +291,7 @@ export const questions = [
     ],
   },
   {
-    question: "فى اى عام اصدر الجزء الاول من فيلم الاب الروحى ؟",
+    question: "فى اى عام اصدر الجزء الاول من فيلم (The God  Father) ؟",
     answers: [
       { choice: "1974", isTrue: false },
       { choice: "1972", isTrue: true },

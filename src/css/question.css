@@ -100,6 +100,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
+  z-index: 10;
 }
 .answer-btn {
   margin-top: 20px;
@@ -110,9 +111,8 @@
   border: none;
   border-radius: 30px;
   transition: all 0.3s ease-out;
-  background-color: #fff;
+  background-color: rgb(192, 186, 186);
   color: #000;
-  z-index: 10;
 }
 .answer-btn:hover {
   background-color: teal;
