@@ -110,10 +110,13 @@
   border: none;
   border-radius: 30px;
   transition: all 0.3s ease-out;
+  background-color: #fff;
+  color: #000;
+  z-index: 10;
 }
 .answer-btn:hover {
   background-color: teal;
-  color: white;
+  color: #fff;
 }
 
 @media only screen and (max-width: 800px) {
