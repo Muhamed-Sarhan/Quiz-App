@@ -10,7 +10,7 @@
   overflow: hidden;
 }
 .q-container {
-  max-width: 50vw;
+  min-width: 50vw;
   background-color: rgba(0, 0, 0, 0.9);
   padding: 1.5rem 1rem;
   border-radius: 5px;
@@ -108,7 +108,7 @@
   font-size: 1rem;
   font-weight: 600;
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   transition: all 0.3s ease-out;
 }
 .answer-btn:hover {
@@ -118,7 +118,7 @@
 
 @media only screen and (max-width: 800px) {
   .q-container {
-    max-width: 80vw;
+    min-width: 80vw;
     padding: 2rem 1.5rem;
   }
 

@@ -17,7 +17,7 @@ const Login = () => {
   const nameSubmit = () => {
     if (name.trim().length > 0) {
       dispatch(handleOnChange(name));
-      swal(`Hi ${name}`, "let us start the quiz", "success");
+      swal(`ازيك يا ${name}`, "يلا نبدا التحدى", "success");
       setName("");
       history.push("/q");
     } else {
