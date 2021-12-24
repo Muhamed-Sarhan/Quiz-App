@@ -46,7 +46,7 @@
   font-weight: 700;
   color: #fff;
   font-size: 1rem;
-  border-radius: 25px;
+  border-radius: 30px;
   cursor: pointer;
 }
 @media only screen and (max-width: 600px) {
@@ -67,6 +67,6 @@
     font-weight: 400;
   }
   .container-btn {
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 2rem;
   }
 }

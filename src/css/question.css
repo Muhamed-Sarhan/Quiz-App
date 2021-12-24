@@ -10,7 +10,7 @@
   overflow: hidden;
 }
 .q-container {
-  min-width: 50vw;
+  width: 50vw;
   background-color: rgba(0, 0, 0, 0.9);
   padding: 1.5rem 1rem;
   border-radius: 5px;
